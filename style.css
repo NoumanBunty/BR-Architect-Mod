@@ -1,0 +1,60 @@
+*{
+    font-family: Verdana, sans-serif;
+}
+#hero-section {
+    background-image: url(Asset/Images/architect.jpg);
+    min-height: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index:10;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.2);
+}
+.black{
+    background-color: black;
+    padding: 4px 7px;
+    opacity: 0.7;
+}
+#about img{
+    filter: grayscale(70%);
+}
+nav a{
+    transition: all 0.2s ease;
+}
+nav a:hover{
+    background-color: rgba(154, 151, 151, 0.526);
+}
+.card .bg-black{
+    z-index: 3;
+}
+
+/*   ============Animations========================*/
+
+#projects img{
+    transform: perspective(1500px) rotateY(20deg);
+    transition: transform 1s ease 0s;
+  
+    &:hover {
+      transform: perspective(4000px) rotateY(1deg);
+    }
+  }
+  #map {
+    transform: perspective(2000px) rotateY(5deg);
+    transition: transform 1s ease 0s;
+  
+    &:hover {
+      transform: perspective(3000px) rotateY(1deg);
+    }
+  } 
+#about button span{
+    display: none;
+    transition: all 5s ease;
+}
+#about button:hover span{
+    display: inline-block;
+}
+
